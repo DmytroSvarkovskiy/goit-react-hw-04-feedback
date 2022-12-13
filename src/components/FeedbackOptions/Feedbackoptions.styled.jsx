@@ -11,17 +11,18 @@ export const FeedbackBtn = styled.button`
   border: 1px solid silver;
   :hover {
     background-color: ${p => {
-      if (p.children === 'good') {
+      if (p.children === 'Good') {
         return '#20b2aa';
-      } else if (p.children === 'neutral') {
+      } else if (p.children === 'Neutral') {
         return '#d9d9d9';
-      } else if (p.children === 'bad') {
+      } else if (p.children === 'Bad') {
         return '#b34019';
       }
     }};
   }
   transition: background-color 0.4s;
 `;
+
 export const FeedbackBtnWrapper = styled.div`
   display: flex;
   gap: 25px;
